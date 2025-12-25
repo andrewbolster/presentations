@@ -1,0 +1,18 @@
+{
+  "name": "andrewbolster-presentations",
+  "version": "1.0.0",
+  "description": "Conference and workshop presentations using Slidev",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build",
+    "export": "slidev export"
+  },
+  "dependencies": {
+    "@slidev/cli": "^0.49.0",
+    "@slidev/theme-default": "latest"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.40.0"
+  }
+}
