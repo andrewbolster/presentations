@@ -19,11 +19,14 @@ const logoSrc = computed(() => {
   const isDark = props.dark
   const isIcon = props.variant === 'icon'
 
+  // Use relative path that works with base URL
+  const base = import.meta.env.BASE_URL || '/'
+
   if (isIcon) {
-    return isDark ? '/logos/BlackDuckIcon-OnDark.svg' : '/logos/BlackDuckIcon.svg'
+    return isDark ? `${base}logos/BlackDuckIcon-OnDark.svg` : `${base}logos/BlackDuckIcon.svg`
   }
 
-  return isDark ? '/logos/BlackDuckLogo-OnDark.svg' : '/logos/BlackDuckLogo.svg'
+  return isDark ? `${base}logos/BlackDuckLogo-OnDark.svg` : `${base}logos/BlackDuckLogo.svg`
 })
 
 const logoClass = computed(() => {

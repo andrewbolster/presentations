@@ -15,7 +15,7 @@ import Logo from '../components/Logo.vue'
 
 <style scoped>
 .default {
-  padding: 3rem 4rem;
+  padding: 4rem 5rem;
   position: relative;
 }
 
