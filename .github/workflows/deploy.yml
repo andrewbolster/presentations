@@ -36,7 +36,7 @@ jobs:
       - name: Build demo presentation
         run: |
           cd demo
-          npx slidev build
+          npx slidev build --base /presentations/demo/
           # Copy build output from dist to demo directory
           cp -r dist/* .
           cp index.html 404.html
