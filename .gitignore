@@ -8,6 +8,8 @@ dist/
 .slidev/
 demo-output/
 *-output/
+demo/demo-clean/
+*/demo-clean/
 
 # Exports
 *.pdf
