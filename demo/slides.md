@@ -1,6 +1,5 @@
 ---
 theme: ./themes/black-duck
-class: text-center
 highlighter: shiki
 lineNumbers: false
 info: |
@@ -13,6 +12,10 @@ transition: slide-left
 title: Black Duck Demo
 mdc: true
 ---
+
+<!--
+layout: cover
+-->
 
 # Black Duck Demo
 
@@ -64,17 +67,19 @@ The theme uses official Black Duck brand colors:
   <div>
     <h3>Primary Colors</h3>
     <ul>
-      <li><strong style="color: #5a2a82;">Synopsys Purple</strong> - #5a2a82</li>
-      <li><strong style="color: #0072a3;">Anchor Blue</strong> - #0072a3</li>
-      <li><strong style="color: #281e1e;">Tar (Text)</strong> - #281e1e</li>
+      <li><strong style="color: #5a2a82;">Dark Purple</strong> - #5a2a82</li>
+      <li><strong style="color: #29aae1;">Cyan Blue</strong> - #29aae1</li>
+      <li><strong style="color: #105681;">Link Blue</strong> - #105681</li>
+      <li><strong style="color: #000000;">Black (Text)</strong> - #000000</li>
     </ul>
   </div>
   <div>
     <h3>Secondary Colors</h3>
     <ul>
-      <li><strong style="color: #89b335;">Granny Green</strong> - #89b335</li>
-      <li><strong style="color: #f1901d;">Zest Orange</strong> - #f1901d</li>
-      <li><strong style="color: #4886b3;">Cove Blue</strong> - #4886b3</li>
+      <li><strong style="color: #a0c565;">Green</strong> - #a0c565</li>
+      <li><strong style="color: #ff9933;">Orange</strong> - #ff9933</li>
+      <li><strong style="color: #ef4923;">Red</strong> - #ef4923</li>
+      <li><strong style="color: #686665;">Grey</strong> - #686665</li>
     </ul>
   </div>
 </div>
@@ -117,7 +122,7 @@ This slide demonstrates the dark mode variant
 - Dark backgrounds with light text
 - Maintains brand consistency
 - Great for code-heavy presentations
-- Uses Pickled Blue Wood background (#2e3b4e)
+- Uses dark grey background (#3b4254)
 
 ```javascript
 // Code looks great on dark backgrounds too

@@ -1,6 +1,9 @@
 <template>
   <div class="slidev-layout cover brand">
     <div class="cover-content">
+      <div class="cover-logo">
+        <Logo variant="full" size="large" :dark="true" />
+      </div>
       <div class="cover-main">
         <slot />
       </div>
@@ -11,6 +14,10 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import Logo from '../components/Logo.vue'
+</script>
 
 <style scoped>
 .cover {
@@ -24,6 +31,12 @@
 .cover-content {
   width: 100%;
   max-width: 900px;
+}
+
+.cover-logo {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .cover-main {

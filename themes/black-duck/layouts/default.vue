@@ -1,14 +1,29 @@
 <template>
   <div class="slidev-layout default">
+    <div class="corner-logo">
+      <Logo variant="icon" size="small" />
+    </div>
     <div class="slide-content">
       <slot />
     </div>
   </div>
 </template>
 
+<script setup>
+import Logo from '../components/Logo.vue'
+</script>
+
 <style scoped>
 .default {
   padding: 3rem 4rem;
+  position: relative;
+}
+
+.corner-logo {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  opacity: 0.6;
 }
 
 .slide-content {
