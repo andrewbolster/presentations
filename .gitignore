@@ -11,6 +11,11 @@ demo-output/
 demo/demo-clean/
 */demo-clean/
 
+# Demo build artifacts (built during deployment)
+demo/assets/
+demo/index.html
+demo/404.html
+
 # Exports
 *.pdf
 
