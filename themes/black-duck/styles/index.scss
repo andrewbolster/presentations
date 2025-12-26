@@ -27,7 +27,7 @@
 
 // Purple brand slide
 .slidev-layout.brand {
-  background: linear-gradient(135deg, var(--bd-primary) 0%, var(--bd-pickled-blue) 100%);
+  background: linear-gradient(135deg, var(--bd-primary) 0%, var(--bd-bg-dark) 100%);
   color: var(--bd-bg-light);
 
   h1, h2, h3, h4, h5, h6 {
@@ -57,23 +57,23 @@ code {
   margin: 1rem 0;
 
   &.info {
-    background-color: rgba(0, 114, 163, 0.1);
+    background-color: rgba(41, 170, 225, 0.1);  // Cyan with transparency
     border-color: var(--bd-secondary);
   }
 
   &.success {
-    background-color: var(--bd-success-bg);
-    border-color: var(--bd-success);
+    background-color: rgba(160, 197, 101, 0.1);  // Green with transparency
+    border-color: #a0c565;
   }
 
   &.warning {
-    background-color: var(--bd-warning-bg);
-    border-color: var(--bd-warning);
+    background-color: rgba(255, 153, 51, 0.1);  // Orange with transparency
+    border-color: #ff9933;
   }
 
   &.alert {
-    background-color: var(--bd-alert-bg);
-    border-color: var(--bd-alert);
+    background-color: rgba(239, 73, 35, 0.1);  // Red with transparency
+    border-color: #ef4923;
   }
 }
 

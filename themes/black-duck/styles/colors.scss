@@ -2,67 +2,47 @@
 // Based on Black Duck Design & Brand guidelines
 
 // Primary Brand Colors
-$bd-purple: #5a2a82;        // Synopsys Purple - primary brand color
-$bd-blue: #0072a3;          // Anchor Blue - interactive elements
-$bd-blue-hover: #275b80;    // Calypso - hover state
-$bd-tar: #281e1e;           // Tar - default text
+$bd-purple: #5a2a82;        // Dark Purple - modern primary accent
+$bd-cyan: #29aae1;          // Cyan Blue - legacy brand blue
+$bd-blue-link: #105681;     // Link Blue - interactive elements
+$bd-black: #000000;         // Black - primary text
 
-// Secondary Brand Colors
-$bd-green: #89b335;         // Granny Green
-$bd-orange: #f1901d;        // Zest Orange
-$bd-cove-blue: #4886b3;     // Cove Blue
-$bd-tropic-blue: #8abfe6;   // Tropic Blue
+// Secondary Brand Colors (from legacy palette)
+$bd-green: #a0c565;         // Green - success/positive
+$bd-green-2: #659965;       // Green variant 2
+$bd-green-3: #166a5b;       // Green variant 3
+$bd-orange: #ff9933;        // Orange - warning/attention
+$bd-red: #ef4923;           // Red - error/critical
+$bd-blue-2: #00639c;        // Blue variant
+$bd-grey: #686665;          // Grey - secondary text
+$bd-grey-dark: #3b4254;     // Dark grey - dark accents
 
-// Neutral Colors
-$bd-athens-grey: #f7f7fa;   // Light background
-$bd-whisper: #ececf1;       // Borders & backgrounds
-$bd-silver: #cccaca;        // Borders
-$bd-aluminum: #888c91;      // UI elements
-$bd-pickled-blue: #2e3b4e;  // Dark UI/app bar
-
-// Severity Colors
-$bd-audit: #b3b2b1;         // Audit/Unrated
-$bd-low: #ffb819;           // Low/Minor severity
-$bd-medium: #e46921;        // Medium severity
-$bd-high: #d61425;          // High severity
-$bd-critical: #9c0e1a;      // Critical severity
-
-// Action Colors
-$bd-success: #3b7d3c;       // Success/Green
-$bd-success-hover: #2f6430;
-$bd-success-bg: #eef7ee;
-$bd-warning: #ffb819;       // Warning/Yellow
-$bd-warning-hover: #e09b00;
-$bd-warning-bg: #fff4dd;
-$bd-alert: #d61425;         // Alert/Red
-$bd-alert-hover: #ab101e;
-$bd-alert-bg: #fad9dc;
-
-// White & Black
-$bd-white: #ffffff;
-$bd-black: #000000;
+// Neutral Colors (for backgrounds)
+$bd-white: #ffffff;         // White - light backgrounds
+$bd-light-grey: #f5f5f5;    // Light grey - secondary backgrounds
+$bd-dark-bg: #1a1a1a;       // Dark backgrounds
 
 // CSS Custom Properties
 :root {
-  // Primary colors
-  --bd-primary: #{$bd-purple};
-  --bd-secondary: #{$bd-blue};
-  --bd-text: #{$bd-tar};
+  // Primary Brand Colors
+  --bd-primary: #{$bd-purple};       // Dark Purple
+  --bd-secondary: #{$bd-cyan};       // Cyan Blue
+  --bd-text: #{$bd-black};           // Black text
 
   // Backgrounds
   --bd-bg-light: #{$bd-white};
-  --bd-bg-accent: #{$bd-athens-grey};
-  --bd-bg-dark: #{$bd-pickled-blue};
+  --bd-bg-accent: #{$bd-light-grey};
+  --bd-bg-dark: #{$bd-dark-bg};
 
   // Interactive
-  --bd-link: #{$bd-blue};
-  --bd-link-hover: #{$bd-blue-hover};
+  --bd-link: #{$bd-blue-link};       // Link Blue
+  --bd-link-hover: #{$bd-purple};    // Purple on hover
 
   // Borders
-  --bd-border: #{$bd-whisper};
-  --bd-border-dark: #{$bd-silver};
+  --bd-border: #{$bd-light-grey};
+  --bd-border-dark: #{$bd-grey};
 
   // Code
-  --bd-code-bg: #{$bd-pickled-blue};
+  --bd-code-bg: #{$bd-grey-dark};    // Dark grey
   --bd-code-text: #{$bd-white};
 }

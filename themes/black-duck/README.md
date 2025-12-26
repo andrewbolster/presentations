@@ -12,9 +12,10 @@ Official Black Duck brand theme for Slidev presentations.
 
 ## Brand Colors
 
-- **Primary**: Synopsys Purple `#5a2a82`
-- **Secondary**: Anchor Blue `#0072a3`
-- **Text**: Tar `#281e1e`
+- **Primary**: Dark Purple `#5a2a82`
+- **Secondary**: Cyan Blue `#29aae1`
+- **Interactive**: Link Blue `#105681`
+- **Text**: Black `#000000`
 
 ## Usage
 
