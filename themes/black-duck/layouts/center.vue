@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
+  padding: 3rem 4rem;
 }
 
 .center-content {
