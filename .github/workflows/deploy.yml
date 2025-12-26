@@ -36,7 +36,9 @@ jobs:
       - name: Build demo presentation
         run: |
           cd demo
-          npx slidev build --out . || true
+          npx slidev build
+          # Copy build output from dist to demo directory
+          cp -r dist/* .
           cp index.html 404.html
 
       - name: Inject commit hash into root index.html
