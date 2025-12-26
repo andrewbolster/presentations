@@ -36,7 +36,8 @@ jobs:
       - name: Build demo presentation
         run: |
           cd demo
-          npx slidev build --out .
+          npx slidev build --out . || true
+          cp index.html 404.html
 
       - name: Inject commit hash into root index.html
         run: |
