@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+.slidev/
+demo-output/
+*-output/
+demo/demo-clean/
+*/demo-clean/
+
+# Demo build artifacts (built during deployment)
+demo/assets/
+demo/index.html
+demo/404.html
+
+# Exports
+*.pdf
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local

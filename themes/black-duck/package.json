@@ -1,0 +1,26 @@
+{
+  "name": "slidev-theme-black-duck",
+  "version": "1.0.0",
+  "description": "Black Duck brand theme for Slidev presentations",
+  "keywords": [
+    "slidev-theme",
+    "slidev",
+    "black-duck"
+  ],
+  "author": "Andrew Bolster",
+  "license": "MIT",
+  "slidev": {
+    "colorSchema": "both",
+    "highlighter": "shiki",
+    "defaults": {
+      "fonts": {
+        "sans": "Roboto",
+        "mono": "Roboto Mono"
+      },
+      "themeConfig": {
+        "primary": "#5a2a82",
+        "secondary": "#0072a3"
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+// Black Duck Brand Colors
+// Based on Black Duck Design & Brand guidelines
+
+// Primary Brand Colors
+$bd-purple: #5a2a82;        // Dark Purple - modern primary accent
+$bd-cyan: #29aae1;          // Cyan Blue - legacy brand blue
+$bd-blue-link: #105681;     // Link Blue - interactive elements
+$bd-black: #000000;         // Black - primary text
+
+// Secondary Brand Colors (from legacy palette)
+$bd-green: #a0c565;         // Green - success/positive
+$bd-green-2: #659965;       // Green variant 2
+$bd-green-3: #166a5b;       // Green variant 3
+$bd-orange: #ff9933;        // Orange - warning/attention
+$bd-red: #ef4923;           // Red - error/critical
+$bd-blue-2: #00639c;        // Blue variant
+$bd-grey: #686665;          // Grey - secondary text
+$bd-grey-dark: #3b4254;     // Dark grey - dark accents
+
+// Neutral Colors (for backgrounds)
+$bd-white: #ffffff;         // White - light backgrounds
+$bd-light-grey: #f5f5f5;    // Light grey - secondary backgrounds
+$bd-dark-bg: #1a1a1a;       // Dark backgrounds
+
+// CSS Custom Properties
+:root {
+  // Primary Brand Colors
+  --bd-primary: #{$bd-purple};       // Dark Purple
+  --bd-secondary: #{$bd-cyan};       // Cyan Blue
+  --bd-text: #{$bd-black};           // Black text
+
+  // Backgrounds
+  --bd-bg-light: #{$bd-white};
+  --bd-bg-accent: #{$bd-light-grey};
+  --bd-bg-dark: #{$bd-dark-bg};
+
+  // Interactive
+  --bd-link: #{$bd-blue-link};       // Link Blue
+  --bd-link-hover: #{$bd-purple};    // Purple on hover
+
+  // Borders
+  --bd-border: #{$bd-light-grey};
+  --bd-border-dark: #{$bd-grey};
+
+  // Code
+  --bd-code-bg: #{$bd-grey-dark};    // Dark grey
+  --bd-code-text: #{$bd-white};
+}
