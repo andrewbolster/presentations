@@ -1,23 +1,22 @@
 ---
-theme: default
-background: https://source.unsplash.com/collection/94734566/1920x1080
+theme: ./themes/black-duck
 class: text-center
 highlighter: shiki
 lineNumbers: false
 info: |
-  ## Demo Presentation
+  ## Black Duck Demo Presentation
 
-  A minimal Slidev presentation template.
+  Showcasing the Black Duck Slidev theme with brand colors and typography.
 drawings:
   persist: false
 transition: slide-left
-title: Demo Presentation
+title: Black Duck Demo
 mdc: true
 ---
 
-# Demo Presentation
+# Black Duck Demo
 
-A minimal Slidev presentation
+Showcasing the Black Duck Brand Theme
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -27,22 +26,18 @@ A minimal Slidev presentation
 
 ---
 
-# What is Slidev?
+# Black Duck Brand Theme
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+This presentation showcases the Black Duck brand theme for Slidev
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themeable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
+## Key Features
 
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+- **True Scale Application Security** - Brand colors and typography
+- **Roboto Font Family** - Official Black Duck font from Google Fonts
+- **Accessible Design** - WCAG AA/AAA compliant color combinations
+- **Multiple Layouts** - Cover, default, center, and more
+- **Dark & Light Modes** - Flexible presentation styles
+- **Code Highlighting** - Beautiful syntax highlighting with brand colors
 
 ---
 
@@ -60,10 +55,86 @@ Hover on the bottom-left corner to see the navigation's controls panel
 | <kbd>down</kbd> | next slide |
 
 ---
+
+# Brand Colors
+
+The theme uses official Black Duck brand colors:
+
+<div class="grid grid-cols-2 gap-4 mt-8">
+  <div>
+    <h3>Primary Colors</h3>
+    <ul>
+      <li><strong style="color: #5a2a82;">Synopsys Purple</strong> - #5a2a82</li>
+      <li><strong style="color: #0072a3;">Anchor Blue</strong> - #0072a3</li>
+      <li><strong style="color: #281e1e;">Tar (Text)</strong> - #281e1e</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Secondary Colors</h3>
+    <ul>
+      <li><strong style="color: #89b335;">Granny Green</strong> - #89b335</li>
+      <li><strong style="color: #f1901d;">Zest Orange</strong> - #f1901d</li>
+      <li><strong style="color: #4886b3;">Cove Blue</strong> - #4886b3</li>
+    </ul>
+  </div>
+</div>
+
+---
+
+# Code Highlighting
+
+The theme includes beautiful code highlighting with brand colors:
+
+```python
+def analyze_security_risk(component):
+    """
+    Analyze security risk for a software component
+    using Black Duck security data.
+    """
+    vulnerabilities = component.get_vulnerabilities()
+
+    risk_score = 0
+    for vuln in vulnerabilities:
+        if vuln.severity == "CRITICAL":
+            risk_score += 10
+        elif vuln.severity == "HIGH":
+            risk_score += 5
+
+    return {
+        "score": risk_score,
+        "status": "ALERT" if risk_score > 15 else "OK"
+    }
+```
+
+---
+class: dark
+---
+
+# Dark Mode
+
+This slide demonstrates the dark mode variant
+
+- Dark backgrounds with light text
+- Maintains brand consistency
+- Great for code-heavy presentations
+- Uses Pickled Blue Wood background (#2e3b4e)
+
+```javascript
+// Code looks great on dark backgrounds too
+const blackDuck = {
+  tagline: "True Scale Application Security",
+  mission: "Uncompromised trust in software",
+  focus: ["AI-powered", "Regulated", "Secure"]
+};
+```
+
+---
 layout: center
 class: text-center
 ---
 
 # Learn More
 
-[Documentation](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+**Black Duck Theme Documentation**
+
+[Slidev](https://sli.dev) · [Black Duck](https://blackduck.com) · [Theme README](./themes/black-duck/README.md)

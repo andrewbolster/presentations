@@ -6,6 +6,8 @@ node_modules/
 # Build outputs
 dist/
 .slidev/
+demo-output/
+*-output/
 
 # Exports
 *.pdf

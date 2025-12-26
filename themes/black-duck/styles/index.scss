@@ -1,0 +1,134 @@
+// Black Duck Slidev Theme
+// True Scale Application Security
+
+@import './colors.scss';
+@import './typography.scss';
+
+// Slide backgrounds
+.slidev-layout {
+  background-color: var(--bd-bg-light);
+  color: var(--bd-text);
+}
+
+// Dark slide variant
+.slidev-layout.dark {
+  background-color: var(--bd-bg-dark);
+  color: var(--bd-bg-light);
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--bd-bg-light);
+  }
+}
+
+// Accent slide variant
+.slidev-layout.accent {
+  background-color: var(--bd-bg-accent);
+}
+
+// Purple brand slide
+.slidev-layout.brand {
+  background: linear-gradient(135deg, var(--bd-primary) 0%, var(--bd-pickled-blue) 100%);
+  color: var(--bd-bg-light);
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--bd-bg-light);
+  }
+}
+
+// Code blocks
+pre {
+  background-color: var(--bd-code-bg) !important;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+code {
+  background-color: var(--bd-code-bg);
+  color: var(--bd-code-text);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+// Callouts
+.callout {
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid;
+  margin: 1rem 0;
+
+  &.info {
+    background-color: rgba(0, 114, 163, 0.1);
+    border-color: var(--bd-secondary);
+  }
+
+  &.success {
+    background-color: var(--bd-success-bg);
+    border-color: var(--bd-success);
+  }
+
+  &.warning {
+    background-color: var(--bd-warning-bg);
+    border-color: var(--bd-warning);
+  }
+
+  &.alert {
+    background-color: var(--bd-alert-bg);
+    border-color: var(--bd-alert);
+  }
+}
+
+// Lists
+ul, ol {
+  li {
+    margin: 0.5rem 0;
+  }
+}
+
+// Tables
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+
+  th {
+    background-color: var(--bd-primary);
+    color: var(--bd-bg-light);
+    padding: 0.75rem;
+    text-align: left;
+  }
+
+  td {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--bd-border);
+  }
+
+  tr:hover {
+    background-color: var(--bd-bg-accent);
+  }
+}
+
+// Buttons
+.slidev-button, button {
+  background-color: var(--bd-secondary);
+  color: var(--bd-bg-light);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-family: $font-primary;
+  font-weight: $font-medium;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: var(--bd-link-hover);
+  }
+}
+
+// Navigation controls
+.slidev-icon-btn {
+  color: var(--bd-secondary);
+
+  &:hover {
+    color: var(--bd-link-hover);
+  }
+}

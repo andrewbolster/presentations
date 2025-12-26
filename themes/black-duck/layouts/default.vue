@@ -1,0 +1,30 @@
+<template>
+  <div class="slidev-layout default">
+    <div class="slide-content">
+      <slot />
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.default {
+  padding: 3rem 4rem;
+}
+
+.slide-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-content h1 {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid var(--bd-primary);
+}
+
+.slide-content h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+</style>

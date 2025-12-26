@@ -1,0 +1,68 @@
+// Black Duck Brand Colors
+// Based on Black Duck Design & Brand guidelines
+
+// Primary Brand Colors
+$bd-purple: #5a2a82;        // Synopsys Purple - primary brand color
+$bd-blue: #0072a3;          // Anchor Blue - interactive elements
+$bd-blue-hover: #275b80;    // Calypso - hover state
+$bd-tar: #281e1e;           // Tar - default text
+
+// Secondary Brand Colors
+$bd-green: #89b335;         // Granny Green
+$bd-orange: #f1901d;        // Zest Orange
+$bd-cove-blue: #4886b3;     // Cove Blue
+$bd-tropic-blue: #8abfe6;   // Tropic Blue
+
+// Neutral Colors
+$bd-athens-grey: #f7f7fa;   // Light background
+$bd-whisper: #ececf1;       // Borders & backgrounds
+$bd-silver: #cccaca;        // Borders
+$bd-aluminum: #888c91;      // UI elements
+$bd-pickled-blue: #2e3b4e;  // Dark UI/app bar
+
+// Severity Colors
+$bd-audit: #b3b2b1;         // Audit/Unrated
+$bd-low: #ffb819;           // Low/Minor severity
+$bd-medium: #e46921;        // Medium severity
+$bd-high: #d61425;          // High severity
+$bd-critical: #9c0e1a;      // Critical severity
+
+// Action Colors
+$bd-success: #3b7d3c;       // Success/Green
+$bd-success-hover: #2f6430;
+$bd-success-bg: #eef7ee;
+$bd-warning: #ffb819;       // Warning/Yellow
+$bd-warning-hover: #e09b00;
+$bd-warning-bg: #fff4dd;
+$bd-alert: #d61425;         // Alert/Red
+$bd-alert-hover: #ab101e;
+$bd-alert-bg: #fad9dc;
+
+// White & Black
+$bd-white: #ffffff;
+$bd-black: #000000;
+
+// CSS Custom Properties
+:root {
+  // Primary colors
+  --bd-primary: #{$bd-purple};
+  --bd-secondary: #{$bd-blue};
+  --bd-text: #{$bd-tar};
+
+  // Backgrounds
+  --bd-bg-light: #{$bd-white};
+  --bd-bg-accent: #{$bd-athens-grey};
+  --bd-bg-dark: #{$bd-pickled-blue};
+
+  // Interactive
+  --bd-link: #{$bd-blue};
+  --bd-link-hover: #{$bd-blue-hover};
+
+  // Borders
+  --bd-border: #{$bd-whisper};
+  --bd-border-dark: #{$bd-silver};
+
+  // Code
+  --bd-code-bg: #{$bd-pickled-blue};
+  --bd-code-text: #{$bd-white};
+}
