@@ -55,3 +55,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
           exclude_assets: '.github,node_modules,.slidev,demo/node_modules,demo/.slidev'
+          enable_jekyll: false
+          force_orphan: false
