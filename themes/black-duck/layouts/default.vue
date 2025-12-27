@@ -1,7 +1,7 @@
 <template>
   <div class="slidev-layout default">
     <div class="corner-logo">
-      <img :src="`${base}logos/BlackDuckIcon.svg`" alt="Black Duck" class="h-12" />
+      <img :src="logoSrc" alt="Black Duck" class="h-12" />
     </div>
     <div class="slide-content">
       <slot />
@@ -14,9 +14,16 @@
 
 <script setup>
 import { computed } from 'vue'
+import { useDark } from '@vueuse/core'
 
+const isDark = useDark()
 const base = computed(() => import.meta.env.BASE_URL || '/')
 const currentYear = new Date().getFullYear()
+
+const logoSrc = computed(() => {
+  const logoFile = isDark.value ? 'BlackDuckIcon-OnDark.svg' : 'BlackDuckIcon.svg'
+  return `${base.value}logos/${logoFile}`
+})
 </script>
 
 <style scoped>
