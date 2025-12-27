@@ -1,5 +1,5 @@
 ---
-theme: ./themes/black-duck
+theme: ../themes/black-duck
 highlighter: shiki
 lineNumbers: false
 info: |
