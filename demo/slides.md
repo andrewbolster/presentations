@@ -2,6 +2,7 @@
 theme: ../themes/black-duck
 highlighter: shiki
 lineNumbers: false
+favicon: /favicon.svg
 info: |
   ## Black Duck Demo Presentation
 
