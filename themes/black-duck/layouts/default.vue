@@ -26,6 +26,8 @@ const currentYear = new Date().getFullYear()
   height: 100%;
   display: flex;
   flex-direction: column;
+  background: var(--bd-bg);
+  color: var(--bd-text);
 }
 
 .corner-logo {
@@ -48,8 +50,8 @@ const currentYear = new Date().getFullYear()
   left: 50%;
   transform: translateX(-50%);
   font-size: 0.75rem;
-  color: var(--bd-text);
-  opacity: 0.5;
+  color: var(--bd-text-secondary);
+  opacity: 0.7;
   z-index: 5;
 }
 
@@ -57,10 +59,12 @@ const currentYear = new Date().getFullYear()
   margin-bottom: 2rem;
   padding-bottom: 1rem;
   border-bottom: 3px solid var(--bd-primary);
+  color: var(--bd-text);
 }
 
 .slide-content h2 {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
+  color: var(--bd-text);
 }
 </style>
