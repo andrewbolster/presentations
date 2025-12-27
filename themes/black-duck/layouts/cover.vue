@@ -10,6 +10,7 @@
       <div class="cover-footer">
         <p class="tagline">True Scale Application Security</p>
         <p class="subheading">Uncompromised trust in software for the regulated, AI-powered world</p>
+        <p class="copyright">Black Duck &copy; 2025</p>
       </div>
     </div>
   </div>
@@ -67,5 +68,11 @@ const base = computed(() => import.meta.env.BASE_URL || '/')
   font-size: 1rem;
   font-style: italic;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.copyright {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 1rem;
 }
 </style>

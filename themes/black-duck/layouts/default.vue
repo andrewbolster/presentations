@@ -6,6 +6,9 @@
     <div class="slide-content">
       <slot />
     </div>
+    <div class="slide-footer">
+      Black Duck &copy; 2025
+    </div>
   </div>
 </template>
 
@@ -19,6 +22,9 @@ const base = computed(() => import.meta.env.BASE_URL || '/')
 .default {
   padding: 4rem 5rem;
   position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .corner-logo {
@@ -26,12 +32,24 @@ const base = computed(() => import.meta.env.BASE_URL || '/')
   bottom: 2rem;
   right: 2rem;
   opacity: 0.6;
+  z-index: 10;
 }
 
 .slide-content {
-  height: 100%;
+  flex: 1;
   display: flex;
   flex-direction: column;
+}
+
+.slide-footer {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75rem;
+  color: var(--bd-text);
+  opacity: 0.5;
+  z-index: 5;
 }
 
 .slide-content h1 {
