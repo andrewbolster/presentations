@@ -2,7 +2,7 @@
   <div class="slidev-layout cover brand">
     <div class="cover-content">
       <div class="cover-logo">
-        <Logo variant="full" size="large" :dark="true" />
+        <img src="/presentations/demo/logos/BlackDuckLogo-OnDark.svg" alt="Black Duck" class="h-32" />
       </div>
       <div class="cover-main">
         <slot />
@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import Logo from '../components/Logo.vue'
+// Inline logo for now to simplify debugging
 </script>
 
 <style scoped>

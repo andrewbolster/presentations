@@ -1,7 +1,7 @@
 <template>
   <div class="slidev-layout default">
     <div class="corner-logo">
-      <Logo variant="icon" size="small" />
+      <img src="/presentations/demo/logos/BlackDuckIcon.svg" alt="Black Duck" class="h-12" />
     </div>
     <div class="slide-content">
       <slot />
@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-import Logo from '../components/Logo.vue'
+// Inline logo for now to simplify debugging
 </script>
 
 <style scoped>
