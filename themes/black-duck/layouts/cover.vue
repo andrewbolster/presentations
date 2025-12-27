@@ -25,12 +25,16 @@ const base = computed(() => import.meta.env.BASE_URL || '/')
 const currentYear = new Date().getFullYear()
 
 const logoSrc = computed(() => {
-  const logoFile = isDark.value ? 'BlackDuckLogo-OnDark.svg' : 'BlackDuckLogo-Black.svg'
+  const logoFile = isDark.value ? 'BlackDuckLogo-OnDark.svg' : 'BlackDuckLogo.svg'
   return `${base.value}logos/${logoFile}`
 })
 </script>
 
 <style scoped>
+.cover.brand {
+  background: linear-gradient(135deg, var(--bd-primary) 0%, #3d1a5a 100%);
+}
+
 .cover {
   display: flex;
   align-items: center;
@@ -57,7 +61,7 @@ const logoSrc = computed(() => {
 .cover-main h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
-  color: var(--bd-bg-light);
+  color: white;
 }
 
 .cover-footer {
@@ -69,7 +73,7 @@ const logoSrc = computed(() => {
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
-  color: var(--bd-bg-light);
+  color: white;
 }
 
 .subheading {
@@ -82,5 +86,28 @@ const logoSrc = computed(() => {
   font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.5);
   margin-top: 1rem;
+}
+
+/* Light mode cover - use light background */
+html:not(.dark) .cover.brand {
+  background: linear-gradient(135deg, #f5f5f5 0%, white 100%);
+}
+
+html:not(.dark) .cover-main h1,
+html:not(.dark) .tagline {
+  color: var(--bd-text);
+}
+
+html:not(.dark) .subheading {
+  color: var(--bd-text-secondary);
+}
+
+html:not(.dark) .copyright {
+  color: var(--bd-text-secondary);
+  opacity: 0.7;
+}
+
+html:not(.dark) .cover-footer {
+  border-top: 2px solid var(--bd-border);
 }
 </style>
