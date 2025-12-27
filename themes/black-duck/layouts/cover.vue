@@ -2,7 +2,7 @@
   <div class="slidev-layout cover brand">
     <div class="cover-content">
       <div class="cover-logo">
-        <img src="/presentations/demo/logos/BlackDuckLogo-OnDark.svg" alt="Black Duck" class="h-32" />
+        <img src="logos/BlackDuckLogo-OnDark.svg" alt="Black Duck" class="h-32" />
       </div>
       <div class="cover-main">
         <slot />

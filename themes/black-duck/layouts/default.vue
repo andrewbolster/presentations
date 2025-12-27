@@ -1,7 +1,7 @@
 <template>
   <div class="slidev-layout default">
     <div class="corner-logo">
-      <img src="/presentations/demo/logos/BlackDuckIcon.svg" alt="Black Duck" class="h-12" />
+      <img src="logos/BlackDuckIcon.svg" alt="Black Duck" class="h-12" />
     </div>
     <div class="slide-content">
       <slot />
