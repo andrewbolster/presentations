@@ -2,7 +2,7 @@
 theme: ../themes/black-duck
 highlighter: shiki
 lineNumbers: false
-favicon: /favicon.svg
+favicon: /presentations/demo/theme/favicon.svg
 info: |
   ## Black Duck Demo Presentation
 
