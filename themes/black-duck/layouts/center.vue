@@ -22,6 +22,8 @@ const currentYear = new Date().getFullYear()
   padding: 3rem 4rem;
   position: relative;
   height: 100%;
+  background: var(--bd-bg);
+  color: var(--bd-text);
 }
 
 .center-content {
@@ -34,7 +36,7 @@ const currentYear = new Date().getFullYear()
   left: 50%;
   transform: translateX(-50%);
   font-size: 0.75rem;
-  color: var(--bd-text);
-  opacity: 0.5;
+  color: var(--bd-text-secondary);
+  opacity: 0.7;
 }
 </style>

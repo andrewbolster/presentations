@@ -22,17 +22,17 @@ $bd-white: #ffffff;         // White - light backgrounds
 $bd-light-grey: #f5f5f5;    // Light grey - secondary backgrounds
 $bd-dark-bg: #1a1a1a;       // Dark backgrounds
 
-// CSS Custom Properties
+// CSS Custom Properties - Light Mode (default)
 :root {
-  // Primary Brand Colors
+  // Primary Brand Colors (consistent across modes)
   --bd-primary: #{$bd-purple};       // Dark Purple
   --bd-secondary: #{$bd-cyan};       // Cyan Blue
-  --bd-text: #{$bd-black};           // Black text
 
-  // Backgrounds
-  --bd-bg-light: #{$bd-white};
+  // Light Mode Colors
+  --bd-bg: #{$bd-white};
   --bd-bg-accent: #{$bd-light-grey};
-  --bd-bg-dark: #{$bd-dark-bg};
+  --bd-text: #{$bd-black};
+  --bd-text-secondary: #{$bd-grey};
 
   // Interactive
   --bd-link: #{$bd-blue-link};       // Link Blue
@@ -40,9 +40,32 @@ $bd-dark-bg: #1a1a1a;       // Dark backgrounds
 
   // Borders
   --bd-border: #{$bd-light-grey};
-  --bd-border-dark: #{$bd-grey};
 
   // Code
   --bd-code-bg: #{$bd-grey-dark};    // Dark grey
+  --bd-code-text: #{$bd-white};
+
+  // Legacy references (for compatibility)
+  --bd-bg-light: #{$bd-white};
+  --bd-bg-dark: #{$bd-dark-bg};
+}
+
+// Dark Mode Colors
+html.dark {
+  // Dark Mode Colors
+  --bd-bg: #{$bd-dark-bg};
+  --bd-bg-accent: #{$bd-grey-dark};
+  --bd-text: #{$bd-white};
+  --bd-text-secondary: #{$bd-light-grey};
+
+  // Interactive (adjust for dark backgrounds)
+  --bd-link: #{$bd-cyan};            // Brighter cyan for dark mode
+  --bd-link-hover: #{$bd-purple};
+
+  // Borders
+  --bd-border: #{$bd-grey-dark};
+
+  // Code (lighter in dark mode)
+  --bd-code-bg: #{$bd-grey-dark};
   --bd-code-text: #{$bd-white};
 }
