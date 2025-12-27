@@ -2,7 +2,7 @@
   <div class="slidev-layout cover brand">
     <div class="cover-content">
       <div class="cover-logo">
-        <img :src="`${base}logos/BlackDuckLogo-OnDark.svg`" alt="Black Duck" class="h-32" />
+        <img :src="logoSrc" alt="Black Duck" class="h-32" />
       </div>
       <div class="cover-main">
         <slot />
@@ -18,9 +18,16 @@
 
 <script setup>
 import { computed } from 'vue'
+import { useDark } from '@vueuse/core'
 
+const isDark = useDark()
 const base = computed(() => import.meta.env.BASE_URL || '/')
 const currentYear = new Date().getFullYear()
+
+const logoSrc = computed(() => {
+  const logoFile = isDark.value ? 'BlackDuckLogo-OnDark.svg' : 'BlackDuckLogo-Black.svg'
+  return `${base.value}logos/${logoFile}`
+})
 </script>
 
 <style scoped>
