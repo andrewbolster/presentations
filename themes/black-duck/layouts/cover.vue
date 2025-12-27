@@ -10,7 +10,7 @@
       <div class="cover-footer">
         <p class="tagline">True Scale Application Security</p>
         <p class="subheading">Uncompromised trust in software for the regulated, AI-powered world</p>
-        <p class="copyright">Black Duck &copy; 2025</p>
+        <p class="copyright">Black Duck &copy; {{ currentYear }}</p>
       </div>
     </div>
   </div>
@@ -20,6 +20,7 @@
 import { computed } from 'vue'
 
 const base = computed(() => import.meta.env.BASE_URL || '/')
+const currentYear = new Date().getFullYear()
 </script>
 
 <style scoped>

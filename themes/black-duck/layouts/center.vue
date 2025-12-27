@@ -4,10 +4,14 @@
       <slot />
     </div>
     <div class="slide-footer">
-      Black Duck &copy; 2025
+      Black Duck &copy; {{ currentYear }}
     </div>
   </div>
 </template>
+
+<script setup>
+const currentYear = new Date().getFullYear()
+</script>
 
 <style scoped>
 .center {
