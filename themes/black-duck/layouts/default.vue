@@ -7,7 +7,7 @@
       <slot />
     </div>
     <div class="slide-footer">
-      Black Duck &copy; 2025
+      Black Duck &copy; {{ currentYear }}
     </div>
   </div>
 </template>
@@ -16,6 +16,7 @@
 import { computed } from 'vue'
 
 const base = computed(() => import.meta.env.BASE_URL || '/')
+const currentYear = new Date().getFullYear()
 </script>
 
 <style scoped>
