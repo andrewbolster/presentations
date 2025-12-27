@@ -1,7 +1,7 @@
 <template>
   <div class="slidev-layout default">
     <div class="corner-logo">
-      <img src="/presentations/demo/logos/BlackDuckIcon.svg" alt="Black Duck" class="h-12" />
+      <img :src="`${base}logos/BlackDuckIcon.svg`" alt="Black Duck" class="h-12" />
     </div>
     <div class="slide-content">
       <slot />
@@ -10,7 +10,9 @@
 </template>
 
 <script setup>
-// Inline logo for now to simplify debugging
+import { computed } from 'vue'
+
+const base = computed(() => import.meta.env.BASE_URL || '/')
 </script>
 
 <style scoped>
