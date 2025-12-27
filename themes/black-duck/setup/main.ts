@@ -1,6 +1,7 @@
 import { defineAppSetup } from '@slidev/types'
+import Logo from '../components/Logo.vue'
 
 export default defineAppSetup(({ app, router }) => {
-  // App setup for Black Duck theme
-  // Add any custom app-level configuration here
+  // Register Logo component globally
+  app.component('Logo', Logo)
 })
