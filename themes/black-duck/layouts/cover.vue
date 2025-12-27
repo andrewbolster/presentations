@@ -2,7 +2,7 @@
   <div class="slidev-layout cover brand">
     <div class="cover-content">
       <div class="cover-logo">
-        <img src="logos/BlackDuckLogo-OnDark.svg" alt="Black Duck" class="h-32" />
+        <img :src="`${base}logos/BlackDuckLogo-OnDark.svg`" alt="Black Duck" class="h-32" />
       </div>
       <div class="cover-main">
         <slot />
@@ -16,7 +16,9 @@
 </template>
 
 <script setup>
-// Inline logo for now to simplify debugging
+import { computed } from 'vue'
+
+const base = computed(() => import.meta.env.BASE_URL || '/')
 </script>
 
 <style scoped>
