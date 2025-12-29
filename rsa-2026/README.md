@@ -9,49 +9,11 @@ Senior Manager of Cybersecurity & R&D, Black Duck
 
 This talk challenges the "single pane of glass" approach to security data consolidation and presents a federated data governance model optimized for AI consumption. Using the three-party co-certification framework (Engineering × GRC × Data Science), it demonstrates how organizations can build trust contracts for messy, distributed security data.
 
-## Quick Start
+## Live Presentation
 
-This presentation uses the Black Duck Slidev theme from this repository.
+**URL**: `https://andrewbolster.info/presentations/rsa-2026/`
 
-### Local Development
-
-```bash
-cd rsa-2026
-npm install
-npm run dev
-```
-
-The presentation will open at `http://localhost:3030`
-
-### Building for Production
-
-```bash
-npm run build
-```
-
-Generates static files in `dist/` for deployment.
-
-## Export Formats
-
-```bash
-npm run export-pdf   # PDF backup for AV systems
-npm run export-pptx  # PowerPoint for collaboration
-npm run export-png   # Individual slide images
-```
-
-## Deployment
-
-This presentation is automatically deployed via GitHub Actions when pushed to main branch.
-
-Live URL: `https://andrewbolster.info/presentations/rsa-2026/`
-
-## Key Features
-
-- **Black Duck Theme**: Custom branded theme with light/dark mode
-- **Interactive Diagrams**: Mermaid diagrams for architecture patterns
-- **Code Examples**: Syntax-highlighted Python implementation examples
-- **Presenter Mode**: Press `P` for notes and timer
-- **Drawing Mode**: Press `D` for live annotation
+Automatically deployed via GitHub Actions when pushed to main branch.
 
 ## Content Structure
 
