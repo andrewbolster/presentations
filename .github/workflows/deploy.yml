@@ -44,6 +44,24 @@ jobs:
           # IMPORTANT: Copy 404.html to root for GitHub Pages SPA routing
           cp index.html ../404.html
 
+      - name: Install RSA 2026 dependencies
+        run: |
+          cd rsa-2026
+          npm install
+
+      - name: Build RSA 2026 presentation
+        run: |
+          cd rsa-2026
+          npx slidev build --base /presentations/rsa-2026/
+          # Copy build output from dist to rsa-2026 directory
+          cp -r dist/* .
+          # Create 404.html for SPA routing
+          cp index.html 404.html
+
+      - name: Generate presentations index
+        run: |
+          node generate-index.js
+
       - name: Inject commit hash into root index.html
         run: |
           COMMIT_HASH="${{ github.sha }}"
