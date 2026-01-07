@@ -9,6 +9,9 @@
   ],
   "author": "Andrew Bolster",
   "license": "MIT",
+  "peerDependencies": {
+    "@vueuse/core": ">=10.0.0"
+  },
   "slidev": {
     "colorSchema": "both",
     "highlighter": "shiki",
