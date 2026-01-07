@@ -1,15 +1,14 @@
 <template>
-  <div class="slidev-layout cover brand">
-    <div class="cover-content">
-      <div class="cover-logo">
+  <div class="slidev-layout end brand">
+    <div class="end-content">
+      <div class="end-logo">
         <img :src="logoSrc" alt="Black Duck" class="h-32" />
       </div>
-      <div class="cover-main">
+      <div class="end-main">
         <slot />
       </div>
-      <div class="cover-footer">
+      <div class="end-footer">
         <p class="tagline">True Scale Application Security</p>
-        <p class="subheading">Uncompromised trust in software for the regulated, AI-powered world</p>
         <p class="copyright">Black Duck &copy; {{ currentYear }}</p>
       </div>
     </div>
@@ -31,55 +30,50 @@ const logoSrc = computed(() => {
 </script>
 
 <style scoped>
-.cover.brand {
+.end.brand {
   background: linear-gradient(135deg, var(--bd-primary) 0%, #3d1a5a 100%);
 }
 
-.cover {
+.end {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 3rem;
+  height: 100%;
 }
 
-.cover-content {
+.end-content {
   width: 100%;
   max-width: 900px;
 }
 
-.cover-logo {
+.end-logo {
   margin-bottom: 2rem;
   display: flex;
   justify-content: center;
 }
 
-.cover-main {
+.end-main {
   margin-bottom: 3rem;
 }
 
-.cover-main h1 {
-  font-size: 4rem;
+.end-main h1 {
+  font-size: 3rem;
   margin-bottom: 1rem;
   color: white;
 }
 
-.cover-footer {
+.end-footer {
   border-top: 2px solid rgba(255, 255, 255, 0.3);
   padding-top: 2rem;
 }
 
 .tagline {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
   color: white;
-}
-
-.subheading {
-  font-size: 1rem;
-  font-style: italic;
-  color: rgba(255, 255, 255, 0.8);
 }
 
 .copyright {
@@ -88,18 +82,14 @@ const logoSrc = computed(() => {
   margin-top: 1rem;
 }
 
-/* Light mode cover - use light background */
-html:not(.dark) .cover.brand {
+/* Light mode end slide */
+html:not(.dark) .end.brand {
   background: linear-gradient(135deg, #f5f5f5 0%, white 100%);
 }
 
-html:not(.dark) .cover-main h1,
+html:not(.dark) .end-main h1,
 html:not(.dark) .tagline {
   color: var(--bd-text);
-}
-
-html:not(.dark) .subheading {
-  color: var(--bd-text-secondary);
 }
 
 html:not(.dark) .copyright {
@@ -107,7 +97,7 @@ html:not(.dark) .copyright {
   opacity: 0.7;
 }
 
-html:not(.dark) .cover-footer {
+html:not(.dark) .end-footer {
   border-top: 2px solid var(--bd-border);
 }
 </style>

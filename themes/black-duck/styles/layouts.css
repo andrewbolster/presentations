@@ -1,0 +1,206 @@
+/* Black Duck Slidev Theme
+   True Scale Application Security */
+
+/* Slide backgrounds */
+.slidev-layout {
+  background-color: var(--bd-bg-light);
+  color: var(--bd-text);
+}
+
+/* Underline bold text when used as subtitles */
+.slidev-layout p strong,
+.slidev-layout div strong,
+.slidev-layout li strong {
+  text-decoration: underline;
+  text-decoration-color: var(--bd-primary);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+/* Dark slide variant */
+.slidev-layout.dark {
+  background-color: var(--bd-bg-dark);
+  color: var(--bd-bg-light);
+}
+
+.slidev-layout.dark h1,
+.slidev-layout.dark h2,
+.slidev-layout.dark h3,
+.slidev-layout.dark h4,
+.slidev-layout.dark h5,
+.slidev-layout.dark h6 {
+  color: var(--bd-bg-light);
+}
+
+/* Accent slide variant - white on purple */
+.slidev-layout.accent {
+  background-color: var(--bd-primary);
+  color: var(--bd-bg-light);
+}
+
+.slidev-layout.accent h1,
+.slidev-layout.accent h2,
+.slidev-layout.accent h3,
+.slidev-layout.accent h4,
+.slidev-layout.accent h5,
+.slidev-layout.accent h6 {
+  color: var(--bd-bg-light);
+}
+
+/* Purple brand slide */
+.slidev-layout.brand {
+  background: linear-gradient(135deg, var(--bd-primary) 0%, var(--bd-bg-dark) 100%);
+  color: var(--bd-bg-light);
+}
+
+.slidev-layout.brand h1,
+.slidev-layout.brand h2,
+.slidev-layout.brand h3,
+.slidev-layout.brand h4,
+.slidev-layout.brand h5,
+.slidev-layout.brand h6 {
+  color: var(--bd-bg-light);
+}
+
+/* Code blocks */
+pre {
+  background-color: var(--bd-code-bg) !important;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+code {
+  background-color: var(--bd-code-bg);
+  color: var(--bd-code-text);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+}
+
+/* Mermaid diagrams */
+.mermaid {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.slidev-layout.dark .mermaid {
+  background-color: #f5f5f5;
+}
+
+.slidev-layout.accent .mermaid,
+.slidev-layout.brand .mermaid {
+  background-color: white;
+}
+
+/* Minimal styling to avoid interfering with Slidev UI */
+
+/* Lists - purple bullet dots */
+.slidev-layout ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.slidev-layout ul > li {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+/* Top-level bullets: more space between blocks */
+.slidev-layout > ul > li,
+.slidev-layout > * > ul > li {
+  margin: 1rem 0;
+}
+
+.slidev-layout ul > li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: var(--bd-primary);
+  border-radius: 50%;
+  display: block;
+}
+
+/* Nested lists - tighter spacing */
+.slidev-layout ul ul {
+  margin-top: 0.25rem;
+  padding-left: 2rem;
+}
+
+.slidev-layout ul ul > li {
+  margin: 0.35rem 0;
+}
+
+.slidev-layout ul ul > li::before {
+  width: 0.4rem;
+  height: 0.4rem;
+  background: var(--bd-secondary);
+}
+
+.slidev-layout ul ul ul > li::before {
+  width: 0.3rem;
+  height: 0.3rem;
+  background: var(--bd-text-secondary);
+}
+
+/* Ordered lists */
+.slidev-layout ol,
+ol {
+  padding-left: 1.5rem;
+}
+
+.slidev-layout ol > li,
+ol > li {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+/* Remove paragraph margins inside ordered lists */
+.slidev-layout ol > li > p,
+ol > li > p {
+  margin: 0;
+}
+
+/* Nested lists inside ordered lists - tighter spacing */
+.slidev-layout ol ul,
+ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.slidev-layout ol ul > li,
+ol ul > li {
+  margin: 0.1rem 0;
+  line-height: 1.4;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+table th {
+  background-color: var(--bd-primary);
+  color: var(--bd-bg-light);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--bd-border);
+}
+
+table tr:hover {
+  background-color: var(--bd-bg-accent);
+}
+
+/* Don't style Slidev's UI controls - let them use defaults */
