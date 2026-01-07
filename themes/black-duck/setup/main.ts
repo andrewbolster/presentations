@@ -1,7 +1,7 @@
-import { defineAppSetup } from '@slidev/types'
+import type { App } from 'vue'
 import Logo from '../components/Logo.vue'
 
-export default defineAppSetup(({ app, router }) => {
+export default (ctx: { app: App }) => {
   // Register Logo component globally
-  app.component('Logo', Logo)
-})
+  ctx.app.component('Logo', Logo)
+}

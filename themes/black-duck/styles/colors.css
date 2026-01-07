@@ -1,0 +1,54 @@
+/* Black Duck Brand Colors
+   Based on Black Duck Design & Brand guidelines */
+
+/* CSS Custom Properties - Light Mode (default) */
+:root {
+  /* Primary Brand Colors (consistent across modes) */
+  --bd-primary: #5a2a82;        /* Dark Purple - modern primary accent */
+  --bd-secondary: #29aae1;      /* Cyan Blue - legacy brand blue */
+
+  /* Light Mode Colors */
+  --bd-bg: #ffffff;
+  --bd-bg-accent: #f5f5f5;
+  --bd-text: #000000;
+  --bd-text-secondary: #686665;
+
+  /* Interactive */
+  --bd-link: #105681;           /* Link Blue - interactive elements */
+  --bd-link-hover: #5a2a82;     /* Purple on hover */
+
+  /* Borders */
+  --bd-border: #f5f5f5;
+
+  /* Code */
+  --bd-code-bg: #3b4254;        /* Dark grey */
+  --bd-code-text: #ffffff;
+
+  /* Secondary Brand Colors */
+  --bd-green: #a0c565;          /* Green - success/positive */
+  --bd-orange: #ff9933;         /* Orange - warning/attention */
+  --bd-red: #ef4923;            /* Red - error/critical */
+
+  /* Legacy references (for compatibility) */
+  --bd-bg-light: #ffffff;
+  --bd-bg-dark: #1a1a1a;
+}
+
+/* Dark Mode Colors */
+html.dark {
+  --bd-bg: #1a1a1a;
+  --bd-bg-accent: #3b4254;
+  --bd-text: #ffffff;
+  --bd-text-secondary: #f5f5f5;
+
+  /* Interactive (adjust for dark backgrounds) */
+  --bd-link: #29aae1;           /* Brighter cyan for dark mode */
+  --bd-link-hover: #5a2a82;
+
+  /* Borders */
+  --bd-border: #3b4254;
+
+  /* Code (lighter in dark mode) */
+  --bd-code-bg: #3b4254;
+  --bd-code-text: #ffffff;
+}

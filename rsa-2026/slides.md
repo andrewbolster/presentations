@@ -4,12 +4,13 @@ theme: ../themes/black-duck
 highlighter: shiki
 lineNumbers: true
 favicon: /presentations/rsa-2026/theme/favicon.svg
+slideFooter: 'RSA Conference 2026 | San Francisco'
 info: |
   ## Dr. StrangeBot: How I Learned to Stop Worrying and Love Historical Security Data
 
   RSA Conference 2026
   Andrew Bolster, PhD
-  Senior Manager of Cybersecurity & R&D, Black Duck
+  Senior R&D Manager (Data Science), Black Duck
 
 drawings:
   persist: false
@@ -32,12 +33,8 @@ exportFilename: dr-strangebot-rsa2026
 </div>
 
 <div class="pt-6 text-xl">
-  Senior Manager of Cybersecurity & R&D<br/>
+  Senior R&D Manager (Data Science)<br/>
   Black Duck
-</div>
-
-<div class="abs-br m-6 flex gap-2">
-  <span class="text-sm opacity-50">RSA Conference 2026 | San Francisco</span>
 </div>
 
 <!--
@@ -83,7 +80,7 @@ The question isn't how to centralize all this - it's how to make it talk to each
 
 ---
 layout: center
-class: text-center
+class: text-center accent
 ---
 
 # The Answer: Federated Security Data
@@ -162,11 +159,11 @@ layout: two-cols
 
 <v-clicks>
 
-❌ Centralize everything into one platform
-❌ Break existing integrations
-❌ Vendor lock-in
-❌ Brittle monolithic architecture
-❌ "Trust us, our AI knows best"
+- ❌ Centralize everything into one platform
+- ❌ Break existing integrations
+- ❌ Vendor lock-in
+- ❌ Brittle monolithic architecture
+- ❌ "Trust us, our AI knows best"
 
 </v-clicks>
 
@@ -176,11 +173,11 @@ layout: two-cols
 
 <v-clicks>
 
-✅ Govern data at source
-✅ Preserve existing workflows
-✅ Platform interoperability
-✅ Distributed, resilient
-✅ "Trust, but verify - everywhere"
+- ✅ Govern data at source
+- ✅ Preserve existing workflows
+- ✅ Platform interoperability
+- ✅ Distributed, resilient
+- ✅ "Trust, but verify - everywhere"
 
 </v-clicks>
 
@@ -229,11 +226,11 @@ The LLM doesn't need them all in one database. It needs to trust that each one h
 
 <v-clicks>
 
-🎯 **LLMs are synthesis engines** - they excel at connecting disparate sources
-🔒 **Trust contracts scale** - governance travels with the data
-🏗️ **Architecture matches reality** - security data is inherently distributed
-🚀 **Innovation at edges** - teams improve their data products independently
-⚡ **Resilience** - no single point of failure
+- 🎯 **LLMs are synthesis engines** - they excel at connecting disparate sources
+- 🔒 **Trust contracts scale** - governance travels with the data
+- 🏗️ **Architecture matches reality** - security data is inherently distributed
+- 🚀 **Innovation at edges** - teams improve their data products independently
+- ⚡ **Resilience** - no single point of failure
 
 </v-clicks>
 
@@ -272,19 +269,19 @@ This is a line I use a lot when talking about AI. Because here's the thing about
 
 <v-clicks>
 
-**1. Historical data is messy** - and that's fine
-- Schema drift over 10 years of vulnerability scans
-- Inconsistent remediation tracking
-- Missing context is the norm
+1. **Historical data is messy** - and that's fine
+   - Schema drift over 10 years of vulnerability scans
+   - Inconsistent remediation tracking
+   - Missing context is the norm
 
-**2. Governance is the enabler, not the blocker**
-- Data Science can't certify what Engineering hasn't validated
-- GRC can't approve what Data Science hasn't tested
-- All three must co-sign for AI consumption
+2. **Governance is the enabler, not the blocker**
+   - Data Science can't certify what Engineering hasn't validated
+   - GRC can't approve what Data Science hasn't tested
+   - All three must co-sign for AI consumption
 
-**3. Trust contracts beat data dictionaries**
-- You'll never document every edge case
-- You can document who's responsible for what
+3. **Trust contracts beat data dictionaries**
+   - You'll never document every edge case
+   - You can document who's responsible for what
 
 </v-clicks>
 
@@ -368,11 +365,11 @@ layout: two-cols
 
 <v-clicks>
 
-✨ Synthesize triage decisions across 10 years of history
-🔍 Surface remediation patterns humans missed
-📊 Contextualize findings with supply chain data
-🎯 Prioritize based on organizational patterns
-💡 Explain recommendations with provenance
+- ✨ Synthesize triage decisions across 10 years of history
+- 🔍 Surface remediation patterns humans missed
+- 📊 Contextualize findings with supply chain data
+- 🎯 Prioritize based on organizational patterns
+- 💡 Explain recommendations with provenance
 
 </v-clicks>
 
@@ -382,11 +379,11 @@ layout: two-cols
 
 <v-clicks>
 
-❌ Automate decisions without human oversight
-❌ Access data outside governance boundaries
-❌ Ignore certification requirements
-❌ Operate on uncertified data products
-❌ Hide its reasoning
+- ❌ Automate decisions without human oversight
+- ❌ Access data outside governance boundaries
+- ❌ Ignore certification requirements
+- ❌ Operate on uncertified data products
+- ❌ Hide its reasoning
 
 </v-clicks>
 

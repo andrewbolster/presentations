@@ -1,1 +1,0 @@
-import{d as n,b as i,o,w as p,A as l,t,B as a,h as c}from"../modules/vue-D6AE_F9i.js";import{s as f,a as u}from"../index-aSTIun2T.js";const x=n({__name:"PrintStyle",setup(_){function r(s,{slots:e}){if(e.default)return c("style",e.default())}return(s,e)=>(o(),i(r,null,{default:p(()=>[l(" @page { size: "+t(a(f))+"px "+t(a(u))+"px; margin: 0px; } ",1)]),_:1}))}});export{x as _};
