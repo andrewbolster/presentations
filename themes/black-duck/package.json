@@ -9,6 +9,9 @@
   ],
   "author": "Andrew Bolster",
   "license": "MIT",
+  "dependencies": {
+    "@slidev/types": "^0.49.0"
+  },
   "slidev": {
     "colorSchema": "both",
     "highlighter": "shiki",
