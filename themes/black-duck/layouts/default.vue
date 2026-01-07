@@ -14,16 +14,22 @@
 
 <script setup>
 import { computed } from 'vue'
-import { useDark } from '@vueuse/core'
 import { useSlideContext } from '@slidev/client'
 
-const isDark = useDark()
 const base = computed(() => import.meta.env.BASE_URL || '/')
 const currentYear = new Date().getFullYear()
 const { $slidev } = useSlideContext()
 
+// Check dark mode by looking at document class (updated by Slidev)
+const isDarkMode = computed(() => {
+  if (typeof document !== 'undefined') {
+    return document.documentElement.classList.contains('dark')
+  }
+  return false
+})
+
 const logoSrc = computed(() => {
-  const logoFile = isDark.value ? 'BlackDuckIcon-OnDark.svg' : 'BlackDuckIcon.svg'
+  const logoFile = isDarkMode.value ? 'BlackDuckIcon-OnDark.svg' : 'BlackDuckIcon.svg'
   return `${base.value}theme/logos/${logoFile}`
 })
 
